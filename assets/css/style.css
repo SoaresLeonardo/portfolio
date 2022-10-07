@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    background-color: #121216;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 1.5em;
+    transition: 0.1s;
+}
+
+@media(min-width:1000px) {
+    .navbar-brand {
+        margin-left: 200px;
+        margin-right: 100px;
+    }
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    transition: 0.1s;
+    margin-right: 12px;
+    
+}
+.nav-link:hover {
+    color:#354AFF;
+    text-decoration:underline 2px;
+}
+
+.navbar-brand:hover {
+    color:#354AFF;
+}
+
+
+
+b {
+    color: #354AFF;
+}
+
+
+.container-home {
+
+}
