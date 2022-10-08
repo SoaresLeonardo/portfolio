@@ -1,43 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
 body {
     background-color: #121216;
+
 }
 
-.navbar-brand {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 0px;
-    margin-right: 0px;
-    font-size: 1.5em;
-    transition: 0.1s;
-}
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+ 
+  a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;  
+  }
 
-@media(min-width:1000px) {
-    .navbar-brand {
-        margin-left: 200px;
-        margin-right: 100px;
+  
+
+ 
+@keyframes animate{
+    0%{
+      opacity: 0;
     }
-}
+    50%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
 
-.nav-link {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3em;
-    transition: 0.1s;
-    margin-right: 12px;
+  @keyframes go-back {
+  
+    100% {
+        transform: rotate(360deg);
+    }
+    
     
 }
-.nav-link:hover {
-    color:#354AFF;
-    text-decoration:underline 2px;
-}
-
-.navbar-brand:hover {
-    color:#354AFF;
-}
-
 
 
 b {
@@ -46,5 +56,106 @@ b {
 
 
 .container-home {
+    font-family: 'Poppins', sans-serif; 
+   padding: 20px;
+   padding-top: 100px;
+    
+}
 
+
+
+.container-home h1 {
+    font-size: 2em;
+    background-image: linear-gradient(to right, #4243E9,#CC59FE,#601BD0);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+@media(min-width:1000px) {
+    .container-home h1 {
+        font-size: 3em;
+    }
+}
+
+.container-home h2 {
+    color: #cccccc;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+
+@media(min-width:1000px) {
+    .container-home h2 {
+        font-size: 1.6em;
+    }
+}
+
+
+
+.container-home button{
+    background-color: transparent;
+    color: #cccccc;
+    padding: 15px;
+    width: 230px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right,  #4243E9,#CC59FE,#601BD0);
+    border-image-slice: 1;
+    font-weight: bold;
+    background-color: transparent;
+   
+    
+}
+
+.container-home button:hover {
+    background-image: linear-gradient(to right,   #4243E9,#CC59FE,#601BD0);
+    color:#121216;
+    
+    
+
+}
+
+#imgseta {
+    width: 20px;
+    filter:contrast(0%) brightness(100%) ;
+}
+
+
+
+
+#teste {
+    width: 200px;
+    color: #cccccc;
+    animation: animate 1.5s linear infinite;
+}
+
+
+#imgteste {
+    float: right;
+    width: 420px;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    animation: go-back 5s infinite;
+    display: none;
+}
+
+@media(min-width:1000px) {
+    #imgteste {
+        display: inline;
+    }
+}
+
+
+.sobre-container {
+    margin-top: 30%;
+    text-align: center;
+}
+
+.sobre-container h1 {
+    color: #354AFF;
 }
