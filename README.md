@@ -7,6 +7,9 @@
 
 <p>Olá, este é o meu portfólio aonde eu irei mostrar mais sobre mim, meus conhecimentos e alguns projetos que foram realizados durante meu aprendizado.</p>
 
+- 🔗 Link **[SoaresLeonardo.com](https://soaresleonardo.github.io/portfolio/)**
+
+
 <h2>Linguagens utilizadas</h2>
 
  <div style="display: inline_block"><br>
