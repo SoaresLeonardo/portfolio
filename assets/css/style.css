@@ -136,11 +136,11 @@ b {
 
 #imgteste {
     float: right;
-    width: 420px;
+    width: 390px;
     position: absolute;
-    top: 15%;
-    left: 60%;
-    animation: go-back 5s infinite;
+    top: 20%;
+    left: 55%;
+   /* animation: go-back 5s infinite; */
     display: none;
 }
 
@@ -153,9 +153,75 @@ b {
 
 .sobre-container {
     margin-top: 30%;
-    text-align: center;
+    padding: 40px;
+    color: #d3d3d3;   
+    
 }
 
 .sobre-container h1 {
     color: #354AFF;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  
+}
+
+.sobre-container h4 {
+    color: #f5f1f1;
+}
+
+.sobre-container p {
+    font-size: 1.1em;
+    
+    
+}
+.sobre-container h3 {
+
+}
+#foto-sobre {
+    width: 320px;
+    float: left;
+    display: none;
+    
+}
+
+@media(min-width: 1000px) {
+    #foto-sobre {
+       
+        display: inline;
+        
+    }
+}
+
+
+.conhecimento-container {
+    margin-top: 30%;
+    text-align: center;
+}
+
+.conhecimento-container h1 {
+    color: #354AFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+
+.set-imagens {
+    width: 30px;
+    filter: contrast(0);
+    float: inline-end;
+    margin-right: 10px;
+}
+
+
+.projetos-container {
+    margin-top: 30%;
+    text-align: center;
+}
+
+.projetos-container h1 {
+    color: #354AFF;
+    text-transform: uppercase;
+    font-weight: bold;
 }
