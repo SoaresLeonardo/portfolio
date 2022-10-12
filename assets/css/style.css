@@ -85,6 +85,17 @@ b {
     margin-bottom: 40px;
     font-size: 1.2em;
 }
+.bar {
+    height: 25px;
+    background-color: #484855;
+    position: relative;
+}
+.bar .progress-bar{
+    position: absolute;
+    height: 100%;
+    background-color: #4243E9;
+   
+ }
 
 
 @media(min-width:1000px) {
@@ -92,7 +103,14 @@ b {
         font-size: 1.6em;
     }
 }
-
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: transparent;
+    border-style: none;
+    
+  }
 
 
 .container-home button{
@@ -117,11 +135,6 @@ b {
     
     
 
-}
-
-#imgseta {
-    width: 20px;
-    filter:contrast(0%) brightness(100%) ;
 }
 
 
@@ -175,9 +188,7 @@ b {
     
     
 }
-.sobre-container h3 {
 
-}
 #foto-sobre {
     width: 320px;
     float: left;
@@ -204,6 +215,10 @@ b {
     text-transform: uppercase;
     font-weight: bold;
     
+}
+
+.card {
+    display: inline-block;
 }
 
 

@@ -1,117 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/nav.style.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    
-    <title>Leonardo Henrique | Estudante de programação</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/nav.style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Leonardo Henrique | Estudante de programação</title>
 </head>
+
 <body>
-  <header>
-    <nav  class="container">
-      <div class="logo"><a href=""><b>&lt</b>Leonardo<b>&gt</b></a></div>
-
+  <header class="container">
+    <button id="back-to-top"><img width="40px" src="assets/img/para-cima.png" alt=""></button>
+    <nav id="nav">
+      <div class="logo"><a href=""><b>&lt&frasl;</b>Leonardo<b>&gt</b></a></div>
       <div class="menu-btn">
-          <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
       </div>
-
       <ul>
-          <li> <a href="#" class="list-nav"> Home </a> </li>
-          <li> <a href="#sobre"  class="list-nav"> Sobre</a> </li>
-          <li> <a href="#conhecimento"  class="list-nav">Conhecimento</a> </li>
-          <li> <a href="#"  class="list-nav"> Projetos</a> </li>
-          
+        <li> <a href="#" class="list-nav">Home</a> </li>
+        <li> <a href="#sobre" class="list-nav"> Sobre</a> </li>
+        <li> <a href="#conhecimento" class="list-nav">Conhecimento</a> </li>
+        <li> <a href="#projetos" class="list-nav"> Projetos</a> </li>
       </ul>
-  </nav>
-  
+    </nav>
   </header>
-  <main>
+  <main class="container">
     <section>
-      <div class="container">
+      <div>
         <div class="container-home">
           <h1>Olá, meu nome é<br> Leonardo.</h1>
           <h2>Atualmente estudando <br> programação.<b id="teste"> |</b></h2>
           <button>Veja meu portfólio ➤</button>
           <div> <img id="imgteste" src="assets/img/fotohome.png" alt="Foto-home"></div>
-      </div>
+        </div>
     </section>
     <section id="sobre">
-      <div class="container">
-        <div  class="sobre-container">
+      <div>
+        <div class="sobre-container">
           <h1>Sobre.</h1>
           <br>
           <div><img id="foto-sobre" src="assets/img/fotosobrecontainer.png" alt="Foto-sobre"></div>
           <h4>Conheça um pouco sobre mim</h4>
           <br>
           <p>
-            Olá, eu me chamo <b>Leonardo Henrique</b> e tenho 15 anos, e estou estudando programação, tenho conhecimento básico sobre front-end porém pretendo ficar somente no back-end por ser uma área que me interresa muito. E decidi criar este portfólio com o propósito de mostrar meus projetos e minhas experiências. 
+            Olá, eu me chamo <b>Leonardo Henrique</b> e tenho 15 anos, e estou estudando programação, tenho conhecimento
+            básico sobre front-end porém pretendo ficar somente no back-end por ser uma área que me interresa muito. E
+            decidi criar este portfólio com o propósito de mostrar meus projetos e minhas experiências.
           </p>
           <div><img class="set-imagens" src="assets/img/github.png" alt="Meu-github">
-            <img  class="set-imagens" src="assets/img/instagram.png" alt="Meu-instagram">
+            <img class="set-imagens" src="assets/img/instagram.png" alt="Meu-instagram">
             <img class="set-imagens" src="assets/img/facebook.png" alt="Meu-facebook">
           </div>
         </div>
-        
+
       </div>
-      
-      
+
+
     </section>
     <section id="conhecimento">
-      <div class="container">
+      <div>
         <div class="conhecimento-container">
           <h1>Conhecimento.</h1>
           <br>
-          <div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card text-bg-dark mb-3">
-                  <img src="assets/img/html.png" class="card-img-top" alt="Linguagem-html5">
-                  <div class="card-body">
-                    <h5 class="card-title">HTML5</h5>
-                    <p class="card-text">é a linguagem de marcação que nós usamos para estruturar e dar significado para o nosso conteúdo web. Por exemplo, definindo parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens e vídeos na página.</p>
-                    <p>Conhecimento básico</p>
-                  </div>
-                </div>
+         <div>
+          <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="assets/img/html.png" class="card-img-top" alt="html">
+            <div class="card-body">
+              <h5 class="card-title">HTML5</h5>
+              <div class="bar">
+                <div id="progress-html" class="progress-bar"></div>
               </div>
-              <div class="col">
-                <div class="card text-bg-dark mb-3">
-                  <img src="assets/img/css.png" class="card-img-top" alt="linguagem-css3">
-                  <div class="card-body">
-                    <h5 class="card-title">CSS3</h5>
-                    <p class="card-text">é uma linguagem de regras de estilo que nós usamos para aplicar estilo ao nosso conteúdo HTML. Por exemplo, definindo cores de fundo e fontes, e posicionando nosso conteúdo em múltiplas colunas.</p>
-                    <p>Conhecimento básico</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-bg-dark mb-3">
-                  <img src="assets/img/javascript.png" class="card-img-top" alt="linguagem-javascript">
-                  <div class="card-body">
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">é uma linguagem de programação que permite a você criar conteúdo que se atualiza dinamicamente, controlar múltimídias, imagens animadas, e tudo o mais que há de intessante. Ok, não tudo, mas é maravilhoso o que você pode efetuar com algumas linhas de código JavaScript.</p>
-                    <p>Avançando...</p>
-                  </div>
-                </div>
-              </div>
-             
             </div>
+          </div>
+          <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="assets/img/css.png" class="card-img-top" alt="css">
+            <div class="card-body">
+              <h5 class="card-title">CSS3</h5>
+              <div class="bar">
+                <div id="progress-css" class="progress-bar"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="assets/img/javascript.png" class="card-img-top" alt="javascript">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <div class="bar">
+                <div id="progress-javascript" class="progress-bar"></div>
+              </div>
+              
+            </div>
+          </div>
+         </div>
           </div>
     </section>
     <section>
-      <div class="container">
+      <div>
         <div class="projetos-container">
           <h1>Projetos</h1>
         </div>
       </div>
     </section>
   </main>
-    <script src="assets/js/ajusteNav.js"></script>
+
+
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>
