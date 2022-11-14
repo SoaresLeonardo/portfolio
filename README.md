@@ -1,5 +1,5 @@
 <h1>Meu portfólio</h1>
- <img  align="center" alt="SoaresLeonardo" src="https://cdn.discordapp.com/attachments/998613310419243070/1029078262632173608/unknown.png" />
+
 
 ##
 
