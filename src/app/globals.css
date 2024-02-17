@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply bg-black text-white
-    }
+  body {
+    @apply overflow-hidden bg-black text-white;
+  }
 }

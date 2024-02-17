@@ -30,8 +30,8 @@ const Nav = () => {
 
 const Header = () => {
   return (
-    <header className="h-[14vh] w-full">
-      <div className="flex w-full items-start justify-between p-12 text-sm">
+    <header className="fixed top-[6.5vh] w-full px-[5vw] py-0">
+      <div className="flex w-full items-start justify-between text-sm">
         <div className="flex w-full max-w-[20%] items-start justify-between">
           <div className="flex flex-col font-medium">
             <span>Soares Leonardo</span>
