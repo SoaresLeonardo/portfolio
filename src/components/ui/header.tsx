@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import { links } from '../constants/navigation';
+import Link from 'next/link';
 
 type NavLinksProps = {
   name: string;
@@ -10,7 +11,9 @@ const NavLinksList = ({ links }: { links: NavLinksProps[] }) => {
   return (
     <ul>
       {links.map((link) => (
-        <li key={link.name}>{link.name}</li>
+        <li key={link.name}>
+          <Link href={link.href}>{link.name}</Link>
+        </li>
       ))}
     </ul>
   );
