@@ -2,8 +2,27 @@ import poppins from './font-poppins';
 
 const Hero = () => {
   return (
-    <section className="mx-[7vw] pt-[24vh]">
-      <div className="flex w-full flex-col">
+    <section className="mx-auto max-w-7xl pt-[24vh]">
+      <div>
+        <div className="flex flex-col gap-6">
+          <h3 className={`${poppins.className} text-7xl leading-tight`}>
+            Independent <br /> Software Designer.
+          </h3>
+          <p className="w-full max-w-2xl text-xl">
+            I design and build software with the goal of telling stories,
+            reducing friction, and crafting digital experiences that are a joy
+            to use.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
+
+{
+  /* <div className="flex w-full flex-col">
         <div className="flex items-start">
           <div>
             <h3 className={`${poppins.className} text-title`}>Desenvolvedor</h3>
@@ -24,9 +43,5 @@ const Hero = () => {
             <h3 className={`${poppins.className} text-title`}>Criativo</h3>
           </div>
         </div>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;
+      </div> */
+}

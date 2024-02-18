@@ -1,16 +1,12 @@
 export const links = {
   navigation: [
     {
-      name: 'Sobre',
-      href: '/me'
-    },
-    {
       name: 'Projetos',
       href: '/projects'
     },
     {
-      name: 'Contato',
-      href: '/contact'
+      name: 'Sobre',
+      href: '/me'
     }
   ],
   social: [

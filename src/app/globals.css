@@ -4,6 +4,33 @@
 
 @layer base {
   body {
-    @apply overflow-hidden bg-black text-white;
+    @apply overflow-x-hidden bg-black text-white;
   }
+}
+
+.project-card {
+  width: 50%;
+  margin: 10px;
+}
+
+.project-card:nth-child(2n-1) {
+  height: 200px; /* Ajuste a altura do card da esquerda conforme necessário */
+  width: 40%;
+}
+
+/* Adicione o seguinte código para inverter os dois cards da segunda linha */
+.projects-container .project-card:nth-child(3) {
+  order: 1; /* Inverte a ordem do terceiro card na segunda linha */
+}
+
+.projects-container .project-card:nth-child(4) {
+  order: 0; /* Inverte a ordem do quarto card na segunda linha */
+}
+
+.projects-container .project-card:nth-child(5) {
+  order: 0; /* Inverte a ordem do quarto card na segunda linha */
+}
+
+.projects-container .project-card:nth-child(6) {
+  order: 1; /* Inverte a ordem do quarto card na segunda linha */
 }
