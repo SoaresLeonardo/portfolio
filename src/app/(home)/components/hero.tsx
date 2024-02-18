@@ -2,7 +2,7 @@ import poppins from './font-poppins';
 
 const Hero = () => {
   return (
-    <section className="mx-auto max-w-7xl pt-[24vh]">
+    <section className="mx-auto max-w-7xl pt-[11vh]">
       <div>
         <div className="flex flex-col gap-6">
           <h3 className={`${poppins.className} text-7xl leading-tight`}>

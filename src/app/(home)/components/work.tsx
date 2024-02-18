@@ -1,5 +1,4 @@
 import { Projects } from '@/data/projects';
-import Link from 'next/link';
 
 type ProjectProps = {
   name: string;
@@ -30,7 +29,7 @@ const ProjectCard = (project: ProjectProps) => {
 
 const ProjectsList = ({ projects }: { projects: ProjectProps[] }) => {
   return (
-    <div className="flex w-full flex-wrap">
+    <div className="flex w-full flex-wrap items-start justify-center">
       {projects.map((project, i) => (
         <ProjectCard key={i} {...project} />
       ))}
@@ -40,10 +39,10 @@ const ProjectsList = ({ projects }: { projects: ProjectProps[] }) => {
 
 const Work = () => {
   return (
-    <section className="mx-auto max-w-7xl pt-[24vh]">
-      <div className="projects-container flex w-full flex-col">
+    <section className="max-w-9xl mx-auto pt-[24vh]">
+      <div className="projects-container flex w-full flex-col items-center justify-center">
         <ProjectsList projects={Projects} />
-        <div className="mb-44 mt-44 flex w-full items-end justify-end">
+        <div className="mb-44 mt-44 flex w-full max-w-7xl items-end justify-end">
           <div>
             <span className="text-sm uppercase">Arquivados</span>
             <ul className="mt-4 flex flex-col items-start justify-start text-start">

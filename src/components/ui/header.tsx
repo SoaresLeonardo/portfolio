@@ -39,12 +39,11 @@ const Nav = () => {
 
 const Header = () => {
   return (
-    <header className="fixed top-[6.5vh] z-30 w-full px-[5vw] py-0">
+    <header className="w-full px-[5vw] py-[5vh]">
       <div className="mx-auto flex w-full max-w-7xl items-start justify-between text-sm">
-        <div className="flex flex-col text-lg font-normal uppercase leading-none">
-          <span>Leonardo</span>
-          <span>Soares</span>
-        </div>
+        <span className="text-lg font-medium uppercase">
+          Soares<span className="text-gray-400">©2024</span>
+        </span>
         <Nav />
       </div>
     </header>
