@@ -2,19 +2,21 @@ import Link from 'next/link';
 
 const Role = () => {
   return (
-    <section className="mx-auto max-w-7xl border-t border-zinc-800 py-[11vh]">
+    <section className="mx-auto max-w-7xl border-t border-zinc-800 py-[8vh]">
       <div className="flex flex-col items-start justify-start gap-5">
-        <p className="w-full max-w-3xl 2xl:text-2xl">
+        <p className="w-full max-w-3xl 2xl:text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
           sapiente optio et cupiditate quod quibusdam nam reprehenderit odit
           explicabo at ratione architecto voluptas odio <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-          sapiente optio et cupiditate quod quibusdam nam reprehenderit odit
-          explicabo at ratione architecto voluptas odio
         </p>
-        <Link href="/me" className="rounded-full bg-white px-5 py-3 text-black">
-          Mais Sobre Mim
+        <Link
+          href="/me"
+          className="group flex items-center rounded-full border border-transparent bg-white px-5 py-2 text-center text-black"
+        >
+          <span className="relative w-fit">
+            <span className="absolute bottom-2 h-[0.15em] w-0 bg-black opacity-90 duration-300 ease-out group-hover:w-full"></span>
+            <span>Veja mais sobre mim.</span>
+          </span>
         </Link>
       </div>
     </section>

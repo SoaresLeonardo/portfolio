@@ -34,3 +34,23 @@
 .projects-container .project-card:nth-child(6) {
   order: 1; /* Inverte a ordem do quarto card na segunda linha */
 }
+
+.link {
+  @apply transition-colors hover:text-white;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-zinc-700;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply hover:bg-zinc-600;
+}

@@ -7,7 +7,7 @@ import Footer from '@/components/ui/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Leonardo - FullStack Developer Portfólio',
+  title: 'Leonardo - Web Developer Portfólio',
   description:
     'E aí! Sou o Leonardo, um FullStack Developer animado para te mostrar o que eu sei fazer. Navegue pelo meu portfólio para conferir as minhas habilidades.'
 };
