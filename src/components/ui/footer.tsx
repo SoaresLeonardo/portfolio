@@ -1,25 +1,20 @@
-import { ExternalLink } from 'lucide-react';
+import { links } from '@/constants/navigation';
 
 const Footer = () => {
   return (
-    <footer className="mx-auto w-full max-w-7xl border-t border-zinc-800">
-      <div className="flex w-full items-center justify-between py-11">
+    <footer className="mx-auto w-full max-w-7xl">
+      <div className="flex w-full items-center justify-between px-20 py-5">
         <span className="text-sm font-medium uppercase text-gray-400">
           Soares©2024
         </span>
         <ul className="flex items-center gap-8 text-sm">
-          <li className="flex items-center gap-3">
-            Instagram <ExternalLink size={14} />
-          </li>
-          <li className="flex items-center gap-3">
-            Linkedin <ExternalLink size={14} />
-          </li>
-          <li className="flex items-center gap-3">
-            Twitter <ExternalLink size={14} />
-          </li>
-          <li className="flex items-center gap-3">
-            GitHub <ExternalLink size={14} />
-          </li>
+          {links.social.map((link) => (
+            <li key={link.name}>
+              <a href={link.href} target="_blank">
+                {link.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </footer>

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@studio-freight/lenis':
+    specifier: ^1.0.37
+    version: 1.0.37
   lucide-react:
     specifier: ^0.331.0
     version: 0.331.0(react@18.2.0)
@@ -313,6 +316,10 @@ packages:
   /@rushstack/eslint-patch@1.7.2:
     resolution: {integrity: sha512-RbhOOTCNoCrbfkRyoXODZp75MlpiHMgbE5MEBZAnnnLyQNgrigEj4p0lzsMDyc1zVsJDLrivB58tgg3emX0eEA==}
     dev: true
+
+  /@studio-freight/lenis@1.0.37:
+    resolution: {integrity: sha512-LKfodiKvdcwN/gRifvgZuI1oL6LjGeHDIL5+rnr2OFqSFsm+hLixeeOiDii48T+iyWUxz/Uuj8/6w/pesc8QmA==}
+    dev: false
 
   /@swc/helpers@0.5.2:
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}

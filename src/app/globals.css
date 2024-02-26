@@ -8,31 +8,20 @@
   }
 }
 
-.project-card {
-  width: 50%;
-  margin: 10px;
+.project-card:nth-child(1) {
+  grid-column: span 7 / span 7;
+}
+.project-card:nth-child(2) {
+  grid-column: span 5 / span 5;
+  padding-top: 5rem;
+}
+.project-card:nth-child(3) {
+  grid-column: span 5 / span 5;
+  padding-top: 5rem;
 }
 
-.project-card:nth-child(2n-1) {
-  height: 200px; /* Ajuste a altura do card da esquerda conforme necessário */
-  width: 40%;
-}
-
-/* Adicione o seguinte código para inverter os dois cards da segunda linha */
-.projects-container .project-card:nth-child(3) {
-  order: 1; /* Inverte a ordem do terceiro card na segunda linha */
-}
-
-.projects-container .project-card:nth-child(4) {
-  order: 0; /* Inverte a ordem do quarto card na segunda linha */
-}
-
-.projects-container .project-card:nth-child(5) {
-  order: 0; /* Inverte a ordem do quarto card na segunda linha */
-}
-
-.projects-container .project-card:nth-child(6) {
-  order: 1; /* Inverte a ordem do quarto card na segunda linha */
+.project-card:nth-child(4) {
+  grid-column: span 7 / span 7;
 }
 
 .link {
@@ -53,4 +42,41 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply hover:bg-zinc-600;
+}
+
+.header-bg {
+  background: linear-gradient(
+    rgb(2, 2, 2) 0%,
+    rgba(2, 2, 2, 0.992) 11.7896%,
+    rgba(2, 2, 2, 0.97) 21.3837%,
+    rgba(2, 2, 2, 0.93) 29.12%,
+    rgba(2, 2, 2, 0.88) 35.3363%,
+    rgba(2, 2, 2, 0.82) 40.3704%,
+    rgba(2, 2, 2, 0.75) 44.56%,
+    rgba(2, 2, 2, 0.67) 48.243%,
+    rgba(2, 2, 2, 0.59) 51.757%,
+    rgba(2, 2, 2, 0.5) 55.44%,
+    rgba(2, 2, 2, 0.416) 59.6296%,
+    rgba(2, 2, 2, 0.325) 64.6637%,
+    rgba(2, 2, 2, 0.24) 70.88%,
+    rgba(2, 2, 2, 0.153) 78.6163%,
+    rgba(2, 2, 2, 0.075) 88.2104%,
+    rgba(2, 2, 2, 0) 100%
+  );
+}
+
+.text-bg {
+  background-image: linear-gradient(7deg, #6a48f2 20%, #fcceee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-linear {
+  background-image: linear-gradient(to right, #6a48f2 20%, #fcceee);
+}
+
+.bg-service {
+  border: 1px solid #1c1924;
+  background-image: linear-gradient(270deg, black, #1c1924);
 }

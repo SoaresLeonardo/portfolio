@@ -9,7 +9,7 @@ type NavLinksProps = {
 
 const NavLinksList = ({ links }: { links: NavLinksProps[] }) => {
   return (
-    <ul className="flex items-center gap-8 font-normal text-gray-400">
+    <ul className="flex items-center gap-8 font-normal text-gray-300">
       {links.map((link) => (
         <li key={link.name} className="link">
           <Link href={link.href}>{link.name}</Link>
@@ -41,11 +41,12 @@ const Nav = () => {
 
 const Header = () => {
   return (
-    <header className="fixed w-full">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between py-[5vh] text-sm">
+    <header className="fixed z-50 w-full px-8 py-6">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between text-sm">
         <Link href="/">
-          <span className="text-lg font-medium uppercase">
-            Soares<span className="text-gray-400">©2024</span>
+          <span className="flex items-center gap-1 text-lg uppercase">
+            <span className="font-bold">Soares</span>
+            <span className="font-light">©2024</span>
           </span>
         </Link>
         <Nav />
