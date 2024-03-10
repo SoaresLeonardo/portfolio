@@ -3,12 +3,12 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/ui/header';
 import Footer from '@/components/ui/footer';
-import AnimationScroll from './(home)/components/animation-scroll';
+import AnimationScroll from '../components/ui/animation-scroll';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Leonardo - Web Developer Portfólio',
+  title: 'Leonardo Henrique - Web Developer',
   description:
     'E aí! Sou o Leonardo, um FullStack Developer animado para te mostrar o que eu sei fazer. Navegue pelo meu portfólio para conferir as minhas habilidades.'
 };
@@ -21,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <AnimationScroll />
-        <Header />
-        {children}
-        <Footer />
+        <div className="flex min-h-screen flex-col">
+          <AnimationScroll />
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -1,18 +1,11 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import Contact from './components/contact';
-import Hero from './components/hero';
-import Role from './components/role';
-import Service from './components/service';
-import Work from './components/work';
+import Work from './_components/work';
+import Hero from './_components/hero';
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-[24vh]">
       <Hero />
       <Work />
-      <Service />
-      <Role />
-      <Contact />
     </main>
   );
 }

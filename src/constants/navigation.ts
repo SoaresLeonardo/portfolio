@@ -3,6 +3,10 @@ export const links = {
     {
       name: 'Sobre',
       href: '/me'
+    },
+    {
+      name: 'Blog',
+      href: '/me'
     }
   ],
   social: [
